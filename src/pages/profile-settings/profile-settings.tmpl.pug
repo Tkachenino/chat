@@ -1,0 +1,18 @@
+.wrapper
+  .backNavigation
+    button.backBtn
+      span(class='material-symbols-outlined') west
+  .settings
+    .settings_readonly
+      .settings__avatar
+        .avatar
+        h2.name= name
+      .field-wrapper
+        each field in profileFields
+          != field
+          .divider
+      .button-wrapper
+        each button in buttons
+          != button
+          .divider
+

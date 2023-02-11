@@ -1,0 +1,12 @@
+.chats
+  .chats__tools
+    button.profile. 
+      Профиль 
+      #[span(class='material-symbols-outlined') chevron_right]
+    .search
+      input(id='search' type="text" class='search__input' placeholder='Поиск')
+  .divider
+  .chats__list
+    each chat in chats
+      .divider
+      != chat

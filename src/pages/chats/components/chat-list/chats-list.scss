@@ -1,0 +1,56 @@
+@import '../chat-item/chat-item.scss';
+
+.chats {
+  height: 100vh;
+  width: 310px;
+  min-width: 310px;
+  background-color: var(--nav-background-color);
+  border-right: 1px solid var(--border-color);
+
+  &__tools {
+    padding: 20px 10px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .profile {
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 12px;
+      color: var(--text-color-02);
+      width: fit-content;
+      align-self: end;
+      background-color: transparent;
+      border-color: transparent;
+      display: flex;
+      align-items: center;
+    }
+
+    .search {
+      &__input {
+        height: 32px;
+        width: 100%;
+        padding: 0 10px;
+        border-radius: 5px;
+        background-color: var(--neutral-background-color);
+        border-color: transparent;
+        &::placeholder {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .divider {
+    width: 280px;
+    margin: -1px auto 0;
+    height: 1px;
+    background-color: var(--border-color);
+  }
+
+  &__list {
+    height: calc(100vh - 117px);
+    overflow-y: auto;
+  }
+}
