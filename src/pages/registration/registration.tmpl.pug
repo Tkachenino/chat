@@ -1,0 +1,8 @@
+.wrapper
+  h1.title Регистрация
+  form(action="#").auth-form
+    each field in fields
+      != field
+  .wrapper-buttons
+    != registerBtn 
+    != visitBtn

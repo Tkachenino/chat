@@ -1,9 +1,17 @@
-doctype html
-html(lang="ru")
-  body
-    h1 Hello Pug!
-    div#root
-    p.
-      Pug is a terse and simple templating language with a
-      strong focus on performance and powerful features.
-    script(type="module", src="index.js")
+<!DOCTYPE html>
+   html(lang="ru")
+      head
+        include ./layout/header/header.pug
+        title Сычивальня
+        link(rel="stylesheet" href="./index.scss")
+      body
+        #app
+          .main
+            div
+              p: b Страницы:
+              p(style="margin: 16px 0;"): a(href="/pages/login") Авторизация
+              p(style="margin: 16px 0;"): a(href="/pages/registration") Регистрация
+              p(style="margin: 16px 0;"): a(href="/pages/profile-settings") Настройки профиля
+              p(style="margin: 16px 0;"): a(href="/pages/chats") Чаты
+              p(style="margin: 16px 0;"): a(href="/pages/not-found") 404
+              p(style="margin: 16px 0;"): a(href="/pages/server-error") 5**

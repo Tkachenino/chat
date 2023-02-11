@@ -1,0 +1,11 @@
+.chat-item
+  .chat-item__avatar
+  .chat-item__content
+    p.title #{author}
+    p.last-msg!= `${isMe ? '<strong>Вы: </strong>': ''} ${text}`
+  .chat-item__info
+    p.time #{time}
+    if (count > 0)
+    .count
+      p= count
+

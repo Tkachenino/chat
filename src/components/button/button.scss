@@ -1,0 +1,21 @@
+.button {
+  height: 37px;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.button_link {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+  color: var(--primary);
+  text-decoration: none;
+  text-align: center;
+}
