@@ -43,7 +43,9 @@ const isMyMessage = {
   isMe: true
 };
 
-messages = [message, message, message, isMyMessage].map((i) => messageTmpl(i));
+const messages = [message, message, message, isMyMessage].map((i) =>
+  messageTmpl(i)
+);
 
 const app = document.querySelector('#app');
 const chatsPreview = mockChats.map((i) => chatItemTmpl(i));
