@@ -1,0 +1,31 @@
+.message {
+  max-width: 402px;
+  border-radius: 12px;
+  border-top-left-radius: 0px;
+  padding: 11px;
+  background-color: var(--nav-background-color);
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--text-color-01);
+  }
+
+  &__date {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 9px;
+    color: var(--text-color-02);
+    text-align: end;
+  }
+
+  &.isMe {
+    background-color: #e4edfd;
+    border-radius: 12px;
+    border-bottom-right-radius: 0;
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,17 @@
+.chat
+  .chat__header
+    .chat__avatar
+    .chat__title= title
+    button(class='settings-button' id='settings-button')
+      span(class='material-symbols-outlined') more_vert
+  .divider
+  .chat__content
+    each message in messages
+      != message
+  .divider
+  .chat__controls
+    button(class='attach-button' id='attach-button')
+      span(class='material-symbols-outlined') attach_file
+    input(type="text" class='message-input' placeholder='Сообщение')
+    button(class='send-button' id='send-button')
+      span(class='material-symbols-outlined') send

@@ -1,0 +1,22 @@
+.profile-label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  color: var(--text-color-01);
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
+  align-items: center;
+
+  .profile-input {
+    width: 100%;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: var(--text-color-02);
+    text-align: right;
+    border: none;
+    outline: none;
+  }
+}
